@@ -73,7 +73,7 @@ class main_controller
 
 		$message_parser = new \parse_message();
 
-		foreach($topic_information as $topic => $topic_data)
+		foreach ($topic_information as $topic => $topic_data)
 		{
 			$message_parser->message = $topic_data['post_text'];
 
