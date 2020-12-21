@@ -1,0 +1,48 @@
+<?php
+/**
+*
+* @package Move Disapproved Posts
+* @copyright (c) 2020 david63
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+*/
+
+/**
+* DO NOT CHANGE
+*/
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
+
+if (empty($lang) || !is_array($lang))
+{
+	$lang = [];
+}
+
+// DEVELOPERS PLEASE NOTE
+//
+// All language files should use UTF-8 as their encoding and the files must not contain a BOM.
+//
+// Placeholders can now contain order information, e.g. instead of
+// 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
+// translators to re-order the output of data while ensuring it remains correct
+//
+// You do not need this where single placeholders are used, e.g. 'Message %d' is fine
+// equally where a string contains only two placeholders which are used to wrap text
+// in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+//
+// Some characters you may want to copy&paste:
+// ’ » “ ” …
+//
+
+$lang = array_merge($lang, array(
+	'FORUM_INVALID'						=> 'The selected forum is invalid',
+	'MOVE_DISAPPROVED'					=> 'Move disapproved posts',
+	'MOVE_DISAPPROVED_EXPLAIN' 			=> 'Move disapproved posts to another forum.',
+	'MOVE_DISAPPROVED_FORUM'			=> 'Forum to move disapproved posts to',
+	'MOVE_DISAPPROVED_FORUM_EXPLAIN'	=> 'This is the forum that any disapproved posts are to be moved to. There are a few points that should be noted about this forum:<br><strong>1.</strong> For obvious reasons the forum should have the permissions set so that it is not accessible to anyone other than a Moderator and/or an Administrator.<br><strong>2.</strong> The forum should have the <strong><em>Increment post counter</em></strong> permission set to <strong>“No”</strong> so that the user’s post count is not updated.<br><strong>3.</strong> The foum should not be accessible to Bots.',
+	'MOVE_DISAPPROVED_OPTIONS'			=> 'Options',
+
+	'SELECT_FORUM'						=> 'Select forum',
+));

@@ -1,0 +1,25 @@
+{% include '@' ~ NAMESPACE ~ '/head_panel.html' %}
+
+{% if PHP_VALID and PHPBB_VALID %}
+	<form id="announceonindex" method="post" action="{{ U_ACTION }}">
+		<fieldset>
+			<legend>{{ lang('OPTIONS') }}</legend>
+
+			<dl>
+	    		<dt><label for="move_disapproved_forum">{{ lang('MOVE_DISAPPROVED_FORUM') }}{{ lang('COLON') }}</label><br><span>{{ lang('MOVE_DISAPPROVED_FORUM_EXPLAIN') }}</span></dt>
+	    		<dd><select id="move_disapproved_forum" name="move_disapproved_forum"><option value="0">{{ lang('SELECT_FORUM') }}</option>{{ MOVE_DISAPPROVED_FORUM }}</select></dd>
+			</dl>
+		</fieldset>
+
+		<fieldset>
+			<legend>{{ lang('SAVE_CHANGES') }}</legend>
+			<p class="submit-buttons">
+				<input class="adm-button" type="submit" id="submit" name="submit" value="{{ lang('SAVE') }}" />&nbsp;
+				<input class="adm-button" type="reset" id="reset" name="reset" value="{{ lang('RESET') }}" />
+			</p>
+			{{ S_FORM_TOKEN }}
+		</fieldset>
+	</form>
+
+	{% include '@' ~ NAMESPACE ~ '/donate.html' %}
+{% endif %}
