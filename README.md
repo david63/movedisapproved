@@ -2,7 +2,7 @@
 
 Moves disapproved posts to another forum.
 
-[![Build Status](https://github.com/david63/movedisapproved/workflows/Tests/badge.svg)](https://github.com/phpbb-extensions/david63/movedisapproved)
+[![Build Status](https://github.com/david63/movedisapproved/workflows/tests/badge.svg)](https://github.com/phpbb-extensions/david63/movedisapproved)
 [![License](https://poser.pugx.org/david63/movedisapproved/license)](https://packagist.org/packages/david63/movedisapproved)
 [![Latest Stable Version](https://poser.pugx.org/david63/movedisapproved/v/stable)](https://packagist.org/packages/david63/movedisapproved)
 [![Latest Unstable Version](https://poser.pugx.org/david63/movedisapproved/v/unstable)](https://packagist.org/packages/david63/movedisapproved)
