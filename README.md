@@ -2,11 +2,12 @@
 
 Moves disapproved posts to another forum.
 
-[![Build Status](https://github.com/david63/movedisapproved/workflows/tests/badge.svg)](https://github.com/phpbb-extensions/david63/movedisapproved)
+[![Build Status](https://github.com/david63/movedisapproved/workflows/Tests/badge.svg)](https://github.com/phpbb-extensions/david63/movedisapproved)
 [![License](https://poser.pugx.org/david63/movedisapproved/license)](https://packagist.org/packages/david63/movedisapproved)
 [![Latest Stable Version](https://poser.pugx.org/david63/movedisapproved/v/stable)](https://packagist.org/packages/david63/movedisapproved)
 [![Latest Unstable Version](https://poser.pugx.org/david63/movedisapproved/v/unstable)](https://packagist.org/packages/david63/movedisapproved)
 [![Total Downloads](https://poser.pugx.org/david63/movedisapproved/downloads)](https://packagist.org/packages/david63/movedisapproved)
+[![codecov](https://codecov.io/gh/david63/movedisapproved/branch/master/graph/badge.svg?token=D2500PgRex)](https://codecov.io/gh/david63/movedisapproved)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/59902be2665c476dbd7951858c9ff769)](https://www.codacy.com/manual/david63/movedisapproved?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=david63/movedisapproved&amp;utm_campaign=Badge_Grade)
 
 ## Minimum Requirements
