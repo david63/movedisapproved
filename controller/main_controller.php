@@ -15,13 +15,13 @@ use phpbb\db\driver\driver_interface;
 
 class main_controller
 {
-	/** @var \phpbb\config\config */
+	/** @var config */
 	protected $config;
 
-	/** @var \phpbb\user */
+	/** @var user */
 	protected $user;
 
-	/** @var \phpbb\db\driver\driver_interface */
+	/** @var driver_interface */
 	protected $db;
 
 	/** @var string phpBB root path */
@@ -30,18 +30,18 @@ class main_controller
 	/** @var string PHP extension */
 	protected $phpEx;
 
-	/** @var string phpBB tables */
+	/** @var array phpBB tables */
 	protected $tables;
 
 	/**
 	 * Constructor for main controller
 	 *
-	 * @param \phpbb\config\config				$config		Config object
-	 * @param \phpbb\user						$user		User object
-	 * @param \phpbb\db\driver\driver_interface	$db			Db object
-	 * @param string							$root_path	phpBB root path
-	 * @param string							$php_ext	phpBB extension
-	 * @param array	                            $tables		phpBB db tables
+	 * @param config				$config		Config object
+	 * @param user					$user		User object
+	 * @param driver_interface		$db			Db object
+	 * @param string				$root_path	phpBB root path
+	 * @param string				$php_ext	phpBB extension
+	 * @param array	                $tables		phpBB db tables
 	 *
 	 * @return \david63\movedisapproved\controller\main_controller
 	 * @access public

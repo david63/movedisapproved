@@ -24,25 +24,25 @@ use david63\movedisapproved\controller\main_controller;
  */
 class listener implements EventSubscriberInterface
 {
-	/** @var \phpbb\config\config */
+	/** @var config */
 	protected $config;
 
-	/** @var \phpbb\user */
+	/** @var user */
 	protected $user;
 
-	/** @var \phpbb\log\log */
+	/** @var log */
 	protected $log;
 
-	/** @var \david63\movedisapproved\controller\main_controller */
+	/** @var main_controller */
 	protected $indexoutput;
 
 	/**
 	 * Constructor for listener
 	 *
-	 * @param \phpbb\config\config              					$config             Config object
-	 * @param \phpbb\user                            				$user               User object
-	 * @param \phpbb\log\log                         				$log                Log object
-	 * @param \david63\movedisapproved\controller\main_controller	$main_controller    Main controller
+	 * @param config            $config             Config object
+	 * @param user              $user               User object
+	 * @param log               $log                Log object
+	 * @param main_controller	$main_controller    Main controller
 	 *
 	 * @access public
 	 */
@@ -130,7 +130,7 @@ class listener implements EventSubscriberInterface
 	 */
 	public function update_post_data($event)
 	{
-		if (array_key_exists('original_poster_id', $data) && $this->config['move_disapproved_forum'] > 0)
+		if (array_key_exists('original_poster_id', $event['data']) && $this->config['move_disapproved_forum'] > 0)
 		{
 			$this->main_controller->update_post_data($event);
 		}

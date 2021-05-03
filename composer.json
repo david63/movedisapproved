@@ -2,8 +2,8 @@
 	"name": "david63/movedisapproved",
 	"type": "phpbb-extension",
 	"description": "Moves disapproved posts to another forum.",
-	"version": "3.3.0-RC1",
-	"time": "2020-12-21",
+	"version": "3.3.0-RC2",
+	"time": "2021-05-03",
 	"keywords":
 	[
 		"phpbb",
@@ -20,7 +20,7 @@
         "php": ">=7.1.3"
     },
 	"extra": {
-		"display-name": "Move disapproved posts",
+		"display-name": "[d63] Move disapproved posts",
 		"soft-require": {
 			"phpbb/phpbb": ">=3.3.0,<4.0.0@dev"
       },
